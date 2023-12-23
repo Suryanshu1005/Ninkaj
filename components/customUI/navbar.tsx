@@ -38,11 +38,11 @@ const Navbar = () => {
       >
         <animated.div
           style={animation}
-          className="flex text-[12px] lg:text-[18px]"
+          className="flex text-[12px] md:text-[14px] lg:text-[18px]"
         >
           <div className="flex md:justify-center">
             <Link
-              className="flex hover:bg-[#dcd7d7] gap-2 rounded-lg w-36 text-center justify-center items-center "
+              className="flex hover:bg-[#dcd7d7] gap-2 rounded-lg text-center justify-center items-center lg:w-36"
               href="/Products"
             >
               <Image
@@ -55,7 +55,7 @@ const Navbar = () => {
               Products
             </Link>
             <Link
-              className="flex hover:bg-[#dcd7d7] p-4 w-36 gap-2 rounded-lg text-center justify-center items-center"
+              className="flex hover:bg-[#dcd7d7] p-4  gap-2 rounded-lg text-center justify-center items-center lg:w-36"
               href="/About-us"
             >
               <Image
@@ -68,7 +68,7 @@ const Navbar = () => {
               About us
             </Link>
             <Link
-              className="flex hover:bg-[#dcd7d7] p-4 w-40 gap-2 rounded-lg text-center justify-center items-center"
+              className="flex hover:bg-[#dcd7d7] p-4 gap-2 rounded-lg text-center justify-center items-center lg:w-40"
               href="/Contact-us"
             >
               <Image
