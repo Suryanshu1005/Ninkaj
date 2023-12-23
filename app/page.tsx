@@ -5,13 +5,9 @@ import Navbar from '@/components/customUI/navbar';
 const Home = () => {
   return (
     <>
-      <Navbar />
       <main>
         <HeroSection />
       </main>
-      <div className="flex flex-col mt-10">
-        <Footer />
-      </div>
     </>
   );
 };

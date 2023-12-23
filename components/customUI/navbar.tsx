@@ -9,6 +9,7 @@ import { useEffect, useState } from 'react';
 import { useSpring, animated } from 'react-spring';
 
 import { Input } from '@/components/ui/input';
+import { Logo } from './logo';
 
 const Navbar = () => {
   const [loaded, setLoaded] = useState(false);
@@ -32,15 +33,29 @@ const Navbar = () => {
     <>
       <div
         className={cn(
-          'border-b shadow-lg top-0 flex p-0 transition-all justify-center md:p-2 md:w-auto lg:p-2 ',
+          'border-b shadow-lg top-0 flex p-0 transition-all sticky bg-white z-[9999] justify-center md:p-2 md:w-auto lg:p-2 ',
           scrolled && 'border-b shadow-md', // Responsive padding for large screens
         )}
       >
+        {/* <Logo /> */}
         <animated.div
           style={animation}
           className="flex text-[12px] md:text-[14px] lg:text-[18px]"
         >
           <div className="flex md:justify-center">
+            <Link
+              className="flex hover:bg-[#dcd7d7] p-4 rounded-lg text-center justify-center items-center lg:w-36"
+              href="/"
+            >
+              <Image
+                className="flex"
+                src="/assets/icons/home.svg"
+                alt="icon1"
+                width={25}
+                height={5}
+              />
+              Home
+            </Link>
             <Link
               className="flex hover:bg-[#dcd7d7] gap-2 rounded-lg text-center justify-center items-center lg:w-36"
               href="/Products"
@@ -55,7 +70,7 @@ const Navbar = () => {
               Products
             </Link>
             <Link
-              className="flex hover:bg-[#dcd7d7] p-4  gap-2 rounded-lg text-center justify-center items-center lg:w-36"
+              className="flex hover:bg-[#dcd7d7] p-4 gap-2 rounded-lg text-center justify-center items-center lg:w-36"
               href="/About-us"
             >
               <Image
@@ -68,12 +83,12 @@ const Navbar = () => {
               About us
             </Link>
             <Link
-              className="flex hover:bg-[#dcd7d7] p-4 gap-2 rounded-lg text-center justify-center items-center lg:w-40"
+              className="flex hover:bg-[#dcd7d7] gap-2 text-center justify-center items-center lg:w-40"
               href="/Contact-us"
             >
               <Image
                 className="flex"
-                src="/assets/icons/contact.svg"
+                src="https://img.icons8.com/arcade/64/about-us-male.png"
                 alt="icon1"
                 width={25}
                 height={5}

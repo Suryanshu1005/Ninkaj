@@ -2,19 +2,19 @@ import styles from './whychooseus.module.css';
 
 const WhyChooseUs = () => {
   return (
-    <>
-      <div className="flex justify-center mt-8">
+    <div className="flex flex-col mb-20 items-center">
+      <div className="flex justify-center mt-20">
         <h1 className="text-4xl font-montserrat font-bold md:text-[30px] lg:text-[55px]">
           Why choose us
         </h1>
       </div>
       <div>
-        <p className="font-montserrat mt-3 text-sm font-semibold text-red-500 text-center md:mt-4 lg:mt-8">
+        <p className="font-montserrat mt-3 text-[12px] font-semibold text-red-500 text-center md:mt-4 md:text-[14px] lg:mt-8 lg:text-[16px]">
           Empowering Your Daily Life with Technological Ingenuity and Unmatched
           Quality.
         </p>
       </div>
-      <div className="flex flex-col text-center ml-10 mr-10 mt-6 gap-y-6 font-montserrat font-extrabold md:flex md:flex-col md:justify-start md:text-[15px] md:font-bold lg:font-semibold lg:flex lg:justify-start">
+      <div className="flex flex-col text-center ml-10 mr-10 mt-6 gap-y-6 font-montserrat font-extrabold md:flex md:flex-col md:justify-start md:text-[15px] md:font-bold lg:font-semibold lg:flex lg:w-[50rem] lg:mt-10">
         <li>
           The primary mission of our organization is to enhance the efficiency
           of daily tasks for individuals through the integration of cutting-edge
@@ -34,7 +34,7 @@ const WhyChooseUs = () => {
           meticulous design and engineering of our products.
         </li>
       </div>
-    </>
+    </div>
   );
 };
 
