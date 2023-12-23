@@ -1,14 +1,19 @@
 const Footer = () => {
-    return (
-        <div className="lg:flex md:flex sm:grid p-4 mt-auto lg:justify-between md:justify-between sm:gap-4">
-            <div className="lg:justify-start items-center md:justify-center sm:justify-center">
-                <p className="font-semibold">© NINKAJ ELECTRONICS 2023</p>
-            </div>
-            <div className="lg:flex lg:items-center lg:justify-end hidden sm:flex">
-                <p>Designed by: - Suryanshu Tiwari</p>
-            </div>
-        </div>
-    )
-}
+  return (
+    <div className="flex flex-col justify-center text-center gap-y-2 bg-black text-white font-montserrat">
+      <div className="mt-4 ml-4 mr-4">
+        <p className="font-semibold">
+          © NINKAJ ELECTRONICS 2023 <br />
+          <span className="text-[12px] font-sans underline underline-offset-2">
+            Trademarks and brands are the property of their respective owners.
+          </span>
+        </p>
+      </div>
+      <div className="mb-4">
+        <p>Designed by: - Suryanshu Tiwari</p>
+      </div>
+    </div>
+  );
+};
 
 export default Footer;

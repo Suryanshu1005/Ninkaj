@@ -6,6 +6,7 @@ import { useState } from 'react';
 import OurProducts from './ourProducts';
 
 import { Separator } from '@/components/ui/separator';
+import WhyChooseUs from './WhyChooseUs/whychooseus';
 
 const HeroSection = () => {
   const [isImageVisible, setImageVisible] = useState(false);
@@ -21,7 +22,7 @@ const HeroSection = () => {
   };
   return (
     <div className="grid grid-cols-1">
-      <div className="flex flex-col justify-center items-center md:grid md:grid-cols-2">
+      <div className="flex flex-col justify-center items-center md:grid md:place-items-center lg:grid lg:grid-cols-2">
         <HomepageContent />
         <Image
           className="flex md:mt-10 md:ml-10 lg:ml-24 lg:w-[600px] lg:h-[700px]"
@@ -31,10 +32,14 @@ const HeroSection = () => {
           width={400}
           height={400}
         />
-        <Separator className="mt-2 w-[85%] h-1 justify-center" />
       </div>
+      <Separator className="mt-2 mr-20 w-[100%] h-[2.5px] md:flex md:justify-center md:w-[100%] lg:w-[100%] lg:grid lg:place-items-center" />
       <div>
         <OurProducts />
+      </div>
+      <Separator className="mt-2 mr-20 w-[100%] h-[2.5px] md:flex md:justify-center md:w-[100%] lg:w-[100%] lg:grid lg:place-items-center" />
+      <div>
+        <WhyChooseUs />
       </div>
     </div>
   );

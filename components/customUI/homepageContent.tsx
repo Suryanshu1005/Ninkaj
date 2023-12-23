@@ -4,8 +4,8 @@ import Typewriter from 'typewriter-effect';
 
 const HomepageContent = () => {
   return (
-    <div className="flex flex-col p-10 justify-center text-center lg:text-start lg:pl-36">
-      <h1 className="text-[30px] font-montserrat font-medium text-red-800 w-full lg:text-[54px] lg:w-[721px]">
+    <div className="flex flex-col p-10 justify-center text-center lg:text-start lg:pl-36 lg:p-0">
+      <h1 className="text-[30px] font-montserrat font-medium text-red-800 w-full lg:text-[54px] lg:w-[721px] lg:mt-[-100px] lg:mb-10">
         {/* <h1 className="sm:text-[28px] lg:text-[58px] font-medium font-montserrat text-700 text-red-800 w-[690px] "> */}
         <Typewriter
           options={{
@@ -17,7 +17,7 @@ const HomepageContent = () => {
           }}
         />
       </h1>
-      <h3 className="text-[15px] font-montserrat text-black/50 font-medium mt-3 lg:text-[18px] lg:mt-2">
+      <h3 className="text-md font-montserrat text-red-500 font-medium mt-3 lg:text-[18px] lg:mt-2">
         where technology meets imagination.
       </h3>
       <p className="mt-4 text-justify font-rubik lg:mt-8">

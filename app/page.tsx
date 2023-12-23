@@ -9,7 +9,7 @@ const Home = () => {
       <main>
         <HeroSection />
       </main>
-      <div className="flex flex-col mt-24">
+      <div className="flex flex-col mt-10">
         <Footer />
       </div>
     </>

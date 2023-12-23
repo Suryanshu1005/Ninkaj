@@ -32,28 +32,52 @@ const Navbar = () => {
     <>
       <div
         className={cn(
-          'border-b shadow-lg top-0 flex p-3 transition-all justify-center',
+          'border-b shadow-lg top-0 flex p-0 transition-all justify-center md:p-2 md:w-auto lg:p-2 ',
           scrolled && 'border-b shadow-md', // Responsive padding for large screens
         )}
       >
-        <animated.div style={animation} className="flex">
-          <div className="flex gap-5 md:justify-center lg:text-[18px]">
+        <animated.div
+          style={animation}
+          className="flex text-[12px] lg:text-[18px]"
+        >
+          <div className="flex md:justify-center">
             <Link
-              className="flex hover:bg-[#be7e7e] rounded-lg w-36 text-center justify-center items-center "
+              className="flex hover:bg-[#dcd7d7] gap-2 rounded-lg w-36 text-center justify-center items-center "
               href="/Products"
             >
+              <Image
+                className="flex"
+                src="/assets/icons/products.svg"
+                alt="icon1"
+                width={25}
+                height={5}
+              />
               Products
             </Link>
             <Link
-              className="flex hover:bg-slate-400 p-4 w-36 rounded-lg text-center justify-center items-center"
+              className="flex hover:bg-[#dcd7d7] p-4 w-36 gap-2 rounded-lg text-center justify-center items-center"
               href="/About-us"
             >
+              <Image
+                className="flex"
+                src="/assets/icons/about.svg"
+                alt="icon1"
+                width={25}
+                height={5}
+              />
               About us
             </Link>
             <Link
-              className="flex hover:bg-slate-400 p-4 w-36 rounded-lg text-center justify-center items-center"
+              className="flex hover:bg-[#dcd7d7] p-4 w-40 gap-2 rounded-lg text-center justify-center items-center"
               href="/Contact-us"
             >
+              <Image
+                className="flex"
+                src="/assets/icons/contact.svg"
+                alt="icon1"
+                width={25}
+                height={5}
+              />
               Contact us
             </Link>
           </div>
