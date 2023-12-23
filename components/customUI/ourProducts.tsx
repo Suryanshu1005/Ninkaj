@@ -20,7 +20,7 @@ const OurProducts = () => {
               width={400}
               height={400}
             />
-            <p className="flex justify-center w-[400px] mt-4 ml-2 text-[14px] font-semibold font-montserrat text-red-900 lg:hover:text-[#000000] lg:cursor-pointer lg:hover:border lg:hover:rounded-lg lg:hover:bg-red-300">
+            <p className="flex justify-center w-[400px] ml-2 text-[11px] font-semibold font-montserrat text-red-900 lg:hover:text-[#000000] lg:cursor-pointer lg:hover:border lg:hover:rounded-lg lg:hover:bg-red-300">
               .5 HP TO 1.5 HP MOTOR AND SUBMERSIBLE STARTER
             </p>
           </div>
@@ -32,7 +32,7 @@ const OurProducts = () => {
               width={400}
               height={100}
             />
-            <p className="flex justify-center w-[400px] rounded-lg ml-2 text-[14px] font-semibold font-montserrat text-red-900 md:mt-7 lg:hover:text-[#000000] lg:cursor-pointer lg:hover:border lg:hover:rounded-lg lg:hover:bg-red-300">
+            <p className="flex justify-center w-[400px] rounded-lg ml-2 text-[11px] font-semibold font-montserrat text-red-900 md:mt-7 lg:hover:text-[#000000] lg:cursor-pointer lg:hover:border lg:hover:rounded-lg lg:hover:bg-red-300">
               1.5 HP TO 10 HP MOTOR AND SUBMERSIBLE STARTER
             </p>
           </div>
@@ -44,7 +44,7 @@ const OurProducts = () => {
               width={400}
               height={400}
             />
-            <p className="flex justify-center w-[170px] text-[14px] font-semibold font-montserrat text-red-900 lg:hover:text-[#000000] lg:cursor-pointer lg:hover:border lg:hover:rounded-lg lg:hover:bg-red-300">
+            <p className="flex justify-center w-[170px] mt-6 text-[11px] font-semibold font-montserrat text-red-900 lg:hover:text-[#000000] lg:cursor-pointer lg:hover:border lg:hover:rounded-lg lg:hover:bg-red-300">
               STAR DELTA STARTER
             </p>
           </div>
@@ -56,7 +56,7 @@ const OurProducts = () => {
               width={400}
               height={400}
             />
-            <p className="flex justify-center w-[210px] mt-4 text-[14px] font-semibold font-montserrat text-red-900 md:mt-[-10px] lg:hover:text-[#000000] lg:cursor-pointer lg:hover:border lg:hover:rounded-lg lg:hover:bg-red-300">
+            <p className="flex justify-center w-[210px] mt-6 text-[11px] font-semibold font-montserrat text-red-900 md:mt-[-10px] lg:hover:text-[#000000] lg:text-[14px] lg:cursor-pointer lg:hover:border lg:hover:rounded-lg lg:hover:bg-red-300">
               SOLAR HYBRID INVERTER
             </p>
           </div>

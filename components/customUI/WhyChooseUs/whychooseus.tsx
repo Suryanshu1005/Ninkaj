@@ -14,7 +14,7 @@ const WhyChooseUs = () => {
           Quality.
         </p>
       </div>
-      <div className="flex flex-col text-center ml-20 mr-20 mt-6 gap-y-6 font-montserrat font-extrabold md:flex md:flex-col md:justify-start md:text-[15px] md:font-bold lg:font-semibold lg:flex lg:justify-start">
+      <div className="flex flex-col text-center ml-10 mr-10 mt-6 gap-y-6 font-montserrat font-extrabold md:flex md:flex-col md:justify-start md:text-[15px] md:font-bold lg:font-semibold lg:flex lg:justify-start">
         <li>
           The primary mission of our organization is to enhance the efficiency
           of daily tasks for individuals through the integration of cutting-edge
