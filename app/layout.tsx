@@ -18,10 +18,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className}, overflow-x-hidden lg`}>
+      <body
+        className={`${inter.className}, overflow-x-hidden flex flex-col min-h-screen`}
+      >
         <Navbar />
         {children}
-        <Footer />
+        <div className="mt-auto">
+          <Footer />
+        </div>
       </body>
     </html>
   );

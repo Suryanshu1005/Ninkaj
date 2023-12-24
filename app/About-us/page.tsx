@@ -10,14 +10,14 @@ const Product = () => {
   return (
     <>
       <div className="flex flex-col justify-center text-center pt-5 pl-3 pr-3 md:flex md:flex-col md:justify-center md:text-center md:mr-28 md:ml-28 lg:mr-32 lg:ml-32">
-        <h1 className="text-red-800 font-montserrat font-bold text-4xl mt-5 underline">
+        <h1 className="text-red-800 font-montserrat font-bold text-4xl mt-5 underline lg:text-5xl">
           About us
         </h1>
-        <div className="mt-6 relative flex text-center justify-center flex-col gap-y-5 mb-10 md:mb-32 lg:mb-32 lg:mt-14 lg:text-start">
+        <div className="mt-12 relative flex text-center justify-center flex-col gap-y-5 mb-12 md:mb-20 lg:mb-24 lg:mt-14 lg:text-start">
           {text.map((item, index) => (
             <>
               <p
-                className="flex gap-4 font-montserrat font-semibold text-[12px] md:text-[14px] lg:text-[16px]"
+                className="flex gap-4 font-montserrat font-semibold text-[12px] md:text-[14px] lg:text-[18px]"
                 key={index}
               >
                 <Image
@@ -31,6 +31,36 @@ const Product = () => {
               </p>
             </>
           ))}
+        </div>
+        <div className="flex gap-10 lg:gap-20 justify-center mb-14">
+          <Image
+            className="w-5 h-5 md:w-7 m:h-7 lg:w-8 lg:h-8"
+            src="/assets/icons/star.svg"
+            alt="star"
+            width={30}
+            height={30}
+          />
+          <Image
+            className="w-5 h-5 md:w-7 m:h-7 lg:w-8 lg:h-8"
+            src="/assets/icons/star.svg"
+            alt="star"
+            width={30}
+            height={30}
+          />
+          <Image
+            className="w-5 h-5 md:w-7 m:h-7 lg:w-8 lg:h-8"
+            src="/assets/icons/star.svg"
+            alt="star"
+            width={30}
+            height={30}
+          />
+          <Image
+            className="w-5 h-5 md:w-7 m:h-7 lg:w-8 lg:h-8"
+            src="/assets/icons/star.svg"
+            alt="star"
+            width={30}
+            height={30}
+          />
         </div>
       </div>
     </>

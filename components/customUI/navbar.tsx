@@ -33,31 +33,31 @@ const Navbar = () => {
     <>
       <div
         className={cn(
-          'border-b shadow-lg top-0 flex p-0 transition-all sticky bg-white z-[9999] justify-center md:p-2 md:w-auto lg:p-2 ',
+          'border-b shadow-lg top-0 flex h-[38px] transition-all sticky bg-white z-[9999] justify-center md:p-2 md:h-[55px] md:w-auto lg:h-[70px] lg:p-1 ',
           scrolled && 'border-b shadow-md', // Responsive padding for large screens
         )}
       >
         {/* <Logo /> */}
         <animated.div
           style={animation}
-          className="flex text-[12px] md:text-[14px] lg:text-[18px]"
+          className="flex text-[10px] md:text-[14px] lg:text-[18px]"
         >
           <div className="flex md:justify-center">
             <Link
-              className="flex hover:bg-[#dcd7d7] p-4 rounded-lg text-center justify-center items-center lg:w-36"
+              className="flex p-2 gap-2 rounded-lg text-center justify-center items-center lg:w-36 md:hover:bg-[#dcd7d7] lg:hover:bg-[#dcd7d7]"
               href="/"
             >
               <Image
                 className="flex"
                 src="/assets/icons/home.svg"
                 alt="icon1"
-                width={25}
-                height={5}
+                width={20}
+                height={10}
               />
               Home
             </Link>
             <Link
-              className="flex hover:bg-[#dcd7d7] gap-2 rounded-lg text-center justify-center items-center lg:w-36"
+              className="flex gap-2 rounded-lg text-center justify-center items-center lg:w-36 md:hover:bg-[#dcd7d7] lg:hover:bg-[#dcd7d7]"
               href="/Products"
             >
               <Image
@@ -70,7 +70,7 @@ const Navbar = () => {
               Products
             </Link>
             <Link
-              className="flex hover:bg-[#dcd7d7] p-4 gap-2 rounded-lg text-center justify-center items-center lg:w-36"
+              className="flex p-4 gap-2 rounded-lg text-center justify-center items-center md:hover:bg-[#dcd7d7] lg:hover:bg-[#dcd7d7] lg:w-36 "
               href="/About-us"
             >
               <Image
@@ -83,7 +83,7 @@ const Navbar = () => {
               About us
             </Link>
             <Link
-              className="flex hover:bg-[#dcd7d7] gap-2 text-center justify-center items-center lg:w-40"
+              className="flex gap-2 text-center rounded-lg justify-center items-center md:hover:bg-[#dcd7d7] lg:hover:bg-[#dcd7d7] lg:w-40"
               href="/Contact-us"
             >
               <Image
