@@ -42,7 +42,7 @@ const HomepageContent = () => {
           Unleash the power of tomorrow with our latest tech marvels. From smart
           solutions to immersive experiences, we redefine what&apos;s possible.
         </p>
-        <div className="mt-12 ml-6 p-6 bg-red-400 w-52 rounded-3xl lg:hover:bg-gradient-to-r from-red-300 to-pink-500 lg:cursor-pointer">
+        <div className="mt-12 ml-6 p-6 bg-blue-800 border border-red-600 text-white w-52 rounded-3xl lg:hover:bg-gradient-to-r from-red-300 to-pink-500 lg:cursor-pointer">
           <button className="font-montserrat font-bold text-lg">
             Buy our product
           </button>

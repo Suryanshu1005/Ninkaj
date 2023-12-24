@@ -25,30 +25,38 @@ const Product1 = () => {
   ];
   return (
     <div className="flex flex-col justify-center items-center">
-      <div className=" flex justify-center font-montserrat font-bold text-red-800 text-2xl text-center lg:mt-[55px] lg:mb-[-10px]">
+      <div className=" flex justify-center font-montserrat font-bold border-[2px] p-2 text-red-800 text-[12px] text-center lg:mt-[42px] lg:p-4 lg:text-2xl">
         .5 HP TO 1.5 HP MOTOR AND SUBMERSIBLE STARTER
       </div>
       <Image
-        className="flex justify-center ml-5 lg:w-[550px] lg:h-[650px] lg:mt-10"
+        className="flex justify-center ml-5 lg:w-[550px] lg:h-[650px] lg:mt-0"
         src="/assets/images/image2.png"
         alt="image"
         width={400}
         height={400}
       />
       <Link
-        href="Products/gallary"
-        className="flex justify-center mb-5 mt-[-20px] text-red-300 underline underline-offset-2"
+        href="Products/.5to1.5hpmotor"
+        className="flex justify-center mb-5 mt-[-20px] text-red-600 font-bold underline underline-offset-2 lg:text-[18px]"
       >
         View product galary
       </Link>
       <div className="flex flex-col relative justify-center gap-y-2 lg:mb-20">
         {product1Features.map((item, index) => (
-          <div
-            key={index}
-            className="flex border pl-3 pr-1 h-14 items-center text-[13px] font-rubik font-semibold lg:w-[500px]"
-          >
-            {item}
-          </div>
+          <>
+            <div
+              key={index}
+              className="flex border pl-3 pr-1 h-14 gap-3 items-center text-[13px] font-rubik font-semibold lg:w-[500px] lg:text-[15px]"
+            >
+              <Image
+                src="/assets/icons/pointer.svg"
+                alt="pointers"
+                width={20}
+                height={20}
+              />
+              {item}
+            </div>
+          </>
         ))}
       </div>
     </div>

@@ -31,8 +31,13 @@ const Product2: FC<Product2> = ({ className }) => {
     'EASY INSTALLATION',
   ];
   return (
-    <div className={cn('flex flex-col justify-center items-center', className)}>
-      <div className=" flex justify-center font-montserrat font-bold text-red-800 text-2xl text-center lg:mt-[-42px] lg:mb-[29px]">
+    <div
+      className={cn(
+        'flex flex-col justify-center items-center mb-10 lg:mb-0',
+        className,
+      )}
+    >
+      <div className=" flex justify-center font-montserrat font-bold border-[2px] p-2 text-red-800 text-[12px] text-center lg:mt-[-42px] lg:mb-[14px] lg:p-4 lg:text-2xl">
         1.5 HP TO 10 HP MOTOR AND SUBMERSIBLE STARTER
       </div>
       <Image
@@ -43,8 +48,8 @@ const Product2: FC<Product2> = ({ className }) => {
         height={600}
       />
       <Link
-        href="Products/gallary"
-        className="flex justify-center mb-5 mt-[-20px] text-red-300 underline underline-offset-2 lg:mt-[-50px]"
+        href="Products/1.5to10hpmotor"
+        className="flex justify-center font-bold mb-5 mt-[-20px] text-red-600 underline underline-offset-2 lg:mt-[-50px] lg:text-[18px] "
       >
         View product galary
       </Link>
@@ -52,8 +57,14 @@ const Product2: FC<Product2> = ({ className }) => {
         {product1Features.map((item, index) => (
           <div
             key={index}
-            className="flex border pl-3 pr-1 h-14 items-center text-[13px] font-rubik font-semibold lg:w-[500px]"
+            className="flex border pl-3 pr-1 h-14 gap-2 items-center text-[13px] font-rubik font-semibold lg:w-[500px] lg:text-[15px]"
           >
+            <Image
+              src="/assets/icons/pointer.svg"
+              alt="pointers"
+              width={20}
+              height={20}
+            />
             {item}
           </div>
         ))}
