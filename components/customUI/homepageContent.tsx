@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import Typewriter from 'typewriter-effect';
 
 const HomepageContent = () => {
@@ -43,9 +44,11 @@ const HomepageContent = () => {
           solutions to immersive experiences, we redefine what&apos;s possible.
         </p>
         <div className="mt-12 ml-6 p-6 bg-blue-800 border border-red-600 text-white w-52 rounded-3xl lg:hover:bg-gradient-to-r from-red-300 to-pink-500 lg:cursor-pointer">
-          <button className="font-montserrat font-bold text-lg">
-            Buy our product
-          </button>
+          <Link href="https://dl.flipkart.com/s/VGfzgauuuN">
+            <button className="font-montserrat font-bold text-lg">
+              Buy our product
+            </button>
+          </Link>
         </div>
       </div>
     </>
