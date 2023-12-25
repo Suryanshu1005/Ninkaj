@@ -24,12 +24,12 @@ const Product1 = () => {
     'EASY INSTALLATION',
   ];
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center lg:mt-[-80px]">
       <div className=" flex justify-center font-montserrat font-bold border-[2px] p-2 text-red-800 text-[12px] text-center lg:mt-[42px] lg:p-4 lg:text-2xl">
         .5 HP TO 1.5 HP MOTOR AND SUBMERSIBLE STARTER
       </div>
       <Image
-        className="flex justify-center ml-5 lg:w-[550px] lg:h-[650px] lg:mt-0"
+        className="flex justify-center ml-5 lg:w-[550px] lg:h-[650px] lg:mt-6"
         src="/assets/images/image2.png"
         alt="image"
         width={400}
